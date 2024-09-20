@@ -1,0 +1,336 @@
+2024-09-20 18:08:10,303 INFO o.s.b.StartupInfoLogger [main] Starting TruckStackerApplication using Java 17.0.2 with PID 3064 (C:\Users\galin\Idea projects\TruckStacker\TruckStacker\target\classes started by galin in C:\Users\galin\Idea projects\TruckStacker\TruckStacker)
+2024-09-20 18:08:10,305 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-20 18:08:10,305 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-09-20 18:08:10,811 INFO o.s.b.StartupInfoLogger [main] Started TruckStackerApplication in 0.716 seconds (process running for 1.26)
+2024-09-20 18:08:37,042 INFO r.l.t.u.UserInterface [main] User input received: Trucks file: three_with_some_boxes_trucks.json, Boxes file: boxes.txt, Max size: 10, Algorithm type: balanced
+2024-09-20 18:08:37,042 INFO r.l.t.c.ConsoleController [main] Request received to stack boxes. Trucks file: three_with_some_boxes_trucks.json, Boxes file: boxes.txt, Max number of trucks: 10, Algorithm type: balanced
+2024-09-20 18:08:37,042 DEBUG r.l.t.c.ConsoleController [main] Reading and converting trucks from file: three_with_some_boxes_trucks.json
+2024-09-20 18:08:37,042 INFO r.l.t.s.r.TrucksReaderConvertorService [main] Starting to read and convert trucks from file: three_with_some_boxes_trucks.json
+2024-09-20 18:08:37,049 DEBUG r.l.t.s.r.TrucksReaderConvertorService [main] Read 32 lines from file three_with_some_boxes_trucks.json
+2024-09-20 18:08:37,083 INFO r.l.t.s.r.TrucksReaderConvertorService [main] Successfully converted to 3 trucks
+2024-09-20 18:08:37,084 DEBUG r.l.t.c.ConsoleController [main] Converted 3 trucks from file.
+2024-09-20 18:08:37,084 DEBUG r.l.t.c.ConsoleController [main] Reading and converting boxes from file: boxes.txt
+2024-09-20 18:08:37,084 INFO r.l.t.s.r.BoxReaderConvertorService [main] Starting to read boxes from file: boxes.txt
+2024-09-20 18:08:37,084 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 1
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 1
+
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 22
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 22
+
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 333
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 333
+
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 4444
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 4444
+
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 55555
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 55555
+
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:08:37,085 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 666
+666
+
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 777
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 7777
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 777
+7777
+
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 8888
+8888
+
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 999
+999
+999
+
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 1
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 1
+
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 22
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 22
+
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 333
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 333
+
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 4444
+2024-09-20 18:08:37,086 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 4444
+
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 55555
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 55555
+
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 666
+666
+
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 777
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 7777
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 777
+7777
+
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 8888
+8888
+
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 999
+999
+999
+
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 1
+2024-09-20 18:08:37,087 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 1
+
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 22
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 22
+
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 333
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 333
+
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 4444
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 4444
+
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 55555
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 55555
+
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 666
+666
+
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 777
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 7777
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 777
+7777
+
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 8888
+8888
+
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:08:37,088 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:08:37,089 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 999
+999
+999
+
+2024-09-20 18:08:37,089 WARN r.l.t.c.StringToBoxConvertor [main] Not Converted box; changed to box type ONE
+2024-09-20 18:08:37,089 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 
+2024-09-20 18:08:37,089 INFO r.l.t.s.r.BoxReaderConvertorService [main] Successfully read 28 boxes from file: boxes.txt
+2024-09-20 18:08:37,089 DEBUG r.l.t.c.ConsoleController [main] Converted 28 boxes from file.
+2024-09-20 18:08:37,089 INFO r.l.t.c.ConsoleController [main] Starting box stacking and saving trucks process.
+2024-09-20 18:08:37,089 INFO r.l.t.s.s.BoxStackerServiceFactory [main] Starting the box stacking process using algorithm: balanced
+2024-09-20 18:08:37,089 DEBUG r.l.t.s.s.BoxStackerServiceFactory [main] Input trucks size: 3, Max size: 10, Number of boxes: 28
+2024-09-20 18:08:37,089 DEBUG r.l.t.s.s.BoxStackerServiceFactory [main] Using BoxStackerService: BalancedBoxStackerService
+2024-09-20 18:08:37,089 INFO r.l.t.s.s.i.b.BalancedBoxStackerService [main] Starting to stack boxes onto trucks. Max truck number: 10
+2024-09-20 18:08:37,090 INFO r.l.t.s.s.i.b.BalancedBoxStackerService [main] Loaded 10 trucks and 28 boxes to stack.
+2024-09-20 18:08:37,090 INFO r.l.t.s.s.i.b.BalancedBoxStackerService [main] Starting balanced stacking algorithm.
+2024-09-20 18:08:37,090 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 9. Current truck free area: 36
+2024-09-20 18:08:37,090 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 27
+2024-09-20 18:08:37,090 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 9. Current truck free area: 36
+2024-09-20 18:08:37,090 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 27
+2024-09-20 18:08:37,090 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 9. Current truck free area: 36
+2024-09-20 18:08:37,090 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 27
+2024-09-20 18:08:37,090 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 8. Current truck free area: 36
+2024-09-20 18:08:37,090 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 28
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 8. Current truck free area: 36
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 28
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 8. Current truck free area: 36
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 28
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 7. Current truck free area: 36
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 29
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 7. Current truck free area: 29
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 22
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 7. Current truck free area: 28
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 21
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 6. Current truck free area: 28
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 22
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 6. Current truck free area: 28
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 22
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 6. Current truck free area: 27
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 21
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 5. Current truck free area: 27
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 22
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 5. Current truck free area: 27
+2024-09-20 18:08:37,091 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 22
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 5. Current truck free area: 26
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 21
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 4. Current truck free area: 26
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 22
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 4. Current truck free area: 24
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 20
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 4. Current truck free area: 22
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 18
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 3. Current truck free area: 22
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 19
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 3. Current truck free area: 22
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 19
+2024-09-20 18:08:37,092 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 3. Current truck free area: 22
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 19
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 2. Current truck free area: 22
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 20
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 2. Current truck free area: 22
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 20
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 2. Current truck free area: 21
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 19
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 1. Current truck free area: 21
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 20
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 1. Current truck free area: 21
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 20
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 1. Current truck free area: 20
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 19
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Processing box with area: 1. Current truck free area: 20
+2024-09-20 18:08:37,093 DEBUG r.l.t.s.s.i.b.BalancedBoxStackerService [main] Box fitted in truck. Updated free area: 19
+2024-09-20 18:08:37,093 INFO r.l.t.s.s.i.b.BalancedBoxStackerService [main] Balancing algorithm finished. Returning results.
+2024-09-20 18:08:37,094 INFO r.l.t.s.s.i.b.BalancedBoxStackerService [main] Finished stacking boxes onto trucks. Total trucks used: 10
+2024-09-20 18:08:37,094 INFO r.l.t.s.s.BoxStackerServiceFactory [main] Box stacking completed. Resulting trucks count: 10
+2024-09-20 18:08:37,094 INFO r.l.t.r.TruckRepositoryImpl [main] Starting to save 10 trucks.
+2024-09-20 18:08:37,107 INFO r.l.t.r.TruckRepositoryImpl [main] Successfully saved trucks to db\trucks\trucks-20.09.2024-1.json
+2024-09-20 18:08:37,107 INFO r.l.t.s.s.BoxStackerServiceFactory [main] Saved 10 trucks to the repository.
+2024-09-20 18:08:37,107 INFO r.l.t.c.ConsoleController [main] Box stacking and saving completed. Total trucks saved: 10
+2024-09-20 18:09:09,207 INFO r.l.t.u.UserInterface [main] User input received: Trucks file: two_fully_loaded_trucks.json, Boxes file: boxes.txt, Max size: 7, Algorithm type: burke
+2024-09-20 18:09:09,207 INFO r.l.t.c.ConsoleController [main] Request received to stack boxes. Trucks file: two_fully_loaded_trucks.json, Boxes file: boxes.txt, Max number of trucks: 7, Algorithm type: burke
+2024-09-20 18:09:09,207 DEBUG r.l.t.c.ConsoleController [main] Reading and converting trucks from file: two_fully_loaded_trucks.json
+2024-09-20 18:09:09,207 INFO r.l.t.s.r.TrucksReaderConvertorService [main] Starting to read and convert trucks from file: two_fully_loaded_trucks.json
+2024-09-20 18:09:09,213 DEBUG r.l.t.s.r.TrucksReaderConvertorService [main] Read 22 lines from file two_fully_loaded_trucks.json
+2024-09-20 18:09:09,213 INFO r.l.t.s.r.TrucksReaderConvertorService [main] Successfully converted to 2 trucks
+2024-09-20 18:09:09,213 DEBUG r.l.t.c.ConsoleController [main] Converted 2 trucks from file.
+2024-09-20 18:09:09,213 DEBUG r.l.t.c.ConsoleController [main] Reading and converting boxes from file: boxes.txt
+2024-09-20 18:09:09,213 INFO r.l.t.s.r.BoxReaderConvertorService [main] Starting to read boxes from file: boxes.txt
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 1
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 1
+
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 22
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 22
+
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 333
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 333
+
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 4444
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 4444
+
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 55555
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 55555
+
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 666
+666
+
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 777
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 7777
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 777
+7777
+
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:09:09,214 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 8888
+8888
+
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 999
+999
+999
+
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 1
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 1
+
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 22
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 22
+
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 333
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 333
+
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 4444
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 4444
+
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 55555
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 55555
+
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 666
+666
+
+2024-09-20 18:09:09,215 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 777
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 7777
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 777
+7777
+
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 8888
+8888
+
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 999
+999
+999
+
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 1
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 1
+
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 22
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 22
+
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 333
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 333
+
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 4444
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 4444
+
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 55555
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 55555
+
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:09:09,216 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 666
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 666
+666
+
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 777
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 7777
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 777
+7777
+
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 8888
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 8888
+8888
+
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Appending line: 999
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 999
+999
+999
+
+2024-09-20 18:09:09,217 WARN r.l.t.c.StringToBoxConvertor [main] Not Converted box; changed to box type ONE
+2024-09-20 18:09:09,217 DEBUG r.l.t.s.r.BoxReaderConvertorService [main] Converted string to Box: 
+2024-09-20 18:09:09,217 INFO r.l.t.s.r.BoxReaderConvertorService [main] Successfully read 28 boxes from file: boxes.txt
+2024-09-20 18:09:09,217 DEBUG r.l.t.c.ConsoleController [main] Converted 28 boxes from file.
+2024-09-20 18:09:09,217 INFO r.l.t.c.ConsoleController [main] Starting box stacking and saving trucks process.
+2024-09-20 18:09:09,218 INFO r.l.t.s.s.BoxStackerServiceFactory [main] Starting the box stacking process using algorithm: burke
+2024-09-20 18:09:09,218 DEBUG r.l.t.s.s.BoxStackerServiceFactory [main] Input trucks size: 2, Max size: 7, Number of boxes: 28
+2024-09-20 18:09:09,218 DEBUG r.l.t.s.s.BoxStackerServiceFactory [main] Using BoxStackerService: BurkeBoxStackerServiceImpl
+2024-09-20 18:09:09,218 INFO r.l.t.s.s.i.b.BurkeBoxStackerServiceImpl [main] Starting to stack boxes onto trucks. Max truck number: 7
+2024-09-20 18:09:09,218 DEBUG r.l.t.s.s.i.b.BurkeBoxStackerServiceImpl [main] Input truck list size: 2, Input box list size: 28
+2024-09-20 18:09:09,219 DEBUG r.l.t.s.s.i.b.BurkeBoxStackerServiceImpl [main] Converted 28 boxes to HeightStatBoxes.
+2024-09-20 18:09:09,219 DEBUG r.l.t.s.s.i.b.BurkeBoxStackerServiceImpl [main] Converted 2 trucks to HeightStatTrucks.
+2024-09-20 18:09:09,224 INFO r.l.t.s.s.i.b.BurkeBoxStackerServiceImpl [main] Stacking completed. Number of trucks used: 7
+2024-09-20 18:09:09,225 INFO r.l.t.s.s.BoxStackerServiceFactory [main] Box stacking completed. Resulting trucks count: 7
+2024-09-20 18:09:09,225 INFO r.l.t.r.TruckRepositoryImpl [main] Starting to save 7 trucks.
+2024-09-20 18:09:09,226 INFO r.l.t.r.TruckRepositoryImpl [main] Successfully saved trucks to db\trucks\trucks-20.09.2024-2.json
+2024-09-20 18:09:09,226 INFO r.l.t.s.s.BoxStackerServiceFactory [main] Saved 7 trucks to the repository.
+2024-09-20 18:09:09,226 INFO r.l.t.c.ConsoleController [main] Box stacking and saving completed. Total trucks saved: 7
