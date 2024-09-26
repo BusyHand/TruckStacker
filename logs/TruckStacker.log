@@ -1,0 +1,4 @@
+2024-09-26 16:26:38,636 INFO o.s.b.StartupInfoLogger [main] Starting TruckStackerApplication using Java 17.0.2 with PID 9544 (C:\Users\galin\Idea projects\TruckStacker\TruckStacker\target\classes started by galin in C:\Users\galin\Idea projects\TruckStacker\TruckStacker)
+2024-09-26 16:26:38,638 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-09-26 16:26:38,639 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-09-26 16:26:39,031 INFO o.s.b.StartupInfoLogger [main] Started TruckStackerApplication in 0.628 seconds (process running for 1.171)
